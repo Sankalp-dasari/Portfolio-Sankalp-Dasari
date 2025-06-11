@@ -188,7 +188,7 @@
             }, 500);
             
             setTimeout(() => {
-                typeWriter(heroSubtitle, 'Hi, I am a computer science major at Virginia Tech with a passion in cybersecurity lorem hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', 30);
+                typeWriter(heroSubtitle, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni suscipit dolores fuga in quia quidem ex nihil assumenda! Voluptas impedit quas architecto pariatur suscipit totam ex nobis, ullam perspiciatis!', 30);
             }, 2000);
         });
 
