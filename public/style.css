@@ -326,9 +326,11 @@
 
 .tag:hover {
   background: #00ffff;
-  color: #000;
-  transform: scale(1.05);
+  color: #fff;
+transform: scale(1.05);
+
 }
+
 
 
         .project-links a:hover {
