@@ -307,6 +307,30 @@
             font-size: 0.9rem;
         }
 
+        .project-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tag:hover {
+  background: #00ffff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
         .project-links a:hover {
             background: #00ffff;
             color: #000;
