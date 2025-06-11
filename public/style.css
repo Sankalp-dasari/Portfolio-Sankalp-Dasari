@@ -289,6 +289,14 @@
             gap: 1rem;
         }
 
+        .icon {
+        width: 20px;
+        height: 20px;
+         margin-right: 8px;
+        vertical-align: middle;
+        display: inline-block;
+        }
+
         .project-links a {
             color: #00ffff;
             text-decoration: none;
@@ -555,3 +563,5 @@
                 left: 20px;
             }
         }
+
+        
