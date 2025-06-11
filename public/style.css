@@ -267,7 +267,9 @@
 }
 
         .project-content {
-            padding: 1.5rem;
+            
+            padding: 1.5rem 1.5rem 1.5rem 2rem; /* Top, Right, Bottom, Left */
+            overflow: hidden;
         }
 
         .project-title {
@@ -306,20 +308,21 @@
         }
 
         .project-tags {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+   display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    max-width: 100%;
 }
 
 .tag {
   background: rgba(0, 255, 255, 0.1);
-  border: 1px solid #00ffff;
-  color: #00ffff;
-  padding: 4px 10px;
-  font-size: 0.75rem;
-  border-radius: 20px;
-  transition: background 0.3s ease, transform 0.2s ease;
+    color: #00ffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 .tag:hover {
