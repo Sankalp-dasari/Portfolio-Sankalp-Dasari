@@ -133,7 +133,7 @@
         // Resume function
         function openResume() {
             // Replace with your actual resume URL
-            window.open('https://your-resume-url.com/resume.pdf', '_blank');
+            window.open('/Sankalp_Resume_June25 (1).pdf', '_blank');
         }
 
         // Close modal when clicking outside
