@@ -1,278 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sankalp Dasari- Portfolio</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-</head>
-<body>
-    <canvas class="matrix-bg" id="matrix"></canvas>
-    
-    <nav id="navbar">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-               <li>
-  <a href="/Sankalp_Resume_June25 (1).pdf" target="_blank" rel="noopener noreferrer">
-    Resume
-  </a>
-</li>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-            </ul>
-        </div>
-    </nav>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    <section id="home" class="hero">
-        <div class="hero-content fade-in">
-            <h1>Lehar Sai Sankalp Dasari</h1>
-            <p>Welcome aboard!</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-    </section>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-    <section id="skills" class="section">
-        <h2 class="section-title fade-in">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category fade-in">
-                <h3>Languages</h3>
-               <ul class="skill-list">
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon"> Python</li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="icon"> Java</li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="icon"> C</li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon"> JavaScript</li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="icon"> SQL</li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="icon"> TypeScript</li>
-</ul>
-
-            </div>
-            <div class="skill-category fade-in">
-                <h3>Frameworks & Libraries</h3>
-                <ul class="skill-list">
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="icon"> Angular</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="icon"> NumPy</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" class="icon"> OpenCV</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="icon"> Pandas</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="icon"> PyTorch</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" class="icon"> SciKit Learn</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="icon"> Spring Boot</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="icon"> TensorFlow</li>
-</ul>
-
-            </div>
-            <div class="skill-category fade-in">
-                <h3>Tools</h3>
-                <ul class="skill-list">
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="icon" /> AWS</li>
-  <li><i class="devicon-apachekafka-original"></i> Apache Kafka</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="icon"> Docker</li>
-  <li><i class="devicon-github-original"></i>   GitHub</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" class="icon"/> Postman</li>
-  <li><i class="devicon-splunk-original-wordmark"></i> Splunk</li>
-</ul>
-
-            </div>
-            <div class="skill-category fade-in">
-                <h3>Operating Systems</h3>
-                <ul class="skill-list">
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" class="icon"> Windows</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="icon"> Linux</li>
-</ul>
-
-            </div>
-        </div>
-    </section>
-
-    
-
-    <section id="projects" class="section">
-        <h2 class="section-title fade-in">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card fade-in" onclick="openProjectModal('project1')">
-                <div class="project-image"><img src="carbonQapture.png"></div>
-                <div class="project-content">
-                    <h3 class="project-title">CarbonQapture</h3>
-                    <p class="project-description">A hybrid quantum-AI framework to simulate and propose novel metal-organic frameworks (MOFs) for carbon dioxide capture, accelerating discovery for climate change mitigation. Our project used a Variational Quantum Eigensolver (VQE) to estimate the ground-state energy of MOFs interacting with CO₂, a key metric for carbon capture efficiency. A machine learning model was trained on simulation results to generate and predict high-performing MOF structures, which were then revalidated through quantum simulations.</p>
-                    <div class="project-links">
-                       <a href="https://github.com/Sankalp-dasari/bitcamp25" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer"> <i class="devicon-github-original"></i></a>
-                        <a href="https://bitcamp25.vercel.app" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer">🌐</a>
-                    </div>
-                    <br>
-                    <h5>Tags</h5>
-                  <div class="project-tags">
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="icon">Python
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy logo" class="icon">NumPy
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas logo" class="icon">Pandas
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch logo" class="icon">PyTorch
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn logo" class="icon">scikit-learn
-  </span>
-</div>
-
-                </div>
-            </div>
-            
-            <div class="project-card fade-in" onclick="openProjectModal('project2')">
-                <div class="project-image"><img src="dnavault.png"></div>
-                <div class="project-content">
-                    <h3 class="project-title">DNAVault</h3>
-                    <p class="project-description">Developed DNAVault, a secure encryption system designed to protect DNA sequence data against classical and quantum attacks. The system integrates a custom AES-128 encryption mechanism with Kyber key encapsulation, providing end-to-end post-quantum security.
-
-                    </p>
-                    <div class="project-links">
-                         <a href="https://github.com/Sankalp-dasari/DNAVault" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer"> <i class="devicon-github-original"></i></a>
-                        <a href="https://dna-vault.vercel.app/" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer">🌐</a>
-                    </div>
-                    <br>
-                      <h5>Tags</h5>
-              <div class="project-tags">
-      <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon">Python</span>
-       <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy logo" class="icon">NumPy
-  </span>
-    </div>
-                </div>
-          
-     </div>
-
-            <div class="project-card fade-in" onclick="openProjectModal('project3')">
-                <div class="project-image"><img src="original.png"></div>
-                <div class="project-content">
-                    <h3 class="project-title">FinPoint</h3>
-                    <p class="project-description">We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction</p>
-                      <div class="project-links">
-                         <a href="https://github.com/Ishaannjain/HackViolet" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer"> <i class="devicon-github-original"></i></a>
-                         <a href="https://dna-vault.vercel.app/" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer">🌐</a>
-                    </div>
-                    <br>
-                    <h5>Tags</h5>
-                 <div class="project-tags">
-      
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="icon">Python
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy logo" class="icon">NumPy
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas logo" class="icon">Pandas
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch logo" class="icon">PyTorch
-  </span>
-  <span class="tag">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn logo" class="icon">scikit-learn
-  </span>
-
-    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <h2 class="section-title fade-in">Experience</h2>
-        <div class="experience-timeline">
-            <div class="experience-item fade-in">
-                <div class="experience-content">
-                    <div class="experience-dot"></div>
-                    <h3 class="experience-title">Cybersecurity Intern</h3>
-                    <div class="experience-company">SecureNet Technologies</div>
-                    <div class="experience-date">June 2024 - August 2024</div>
-                    <p>Conducted penetration testing on client networks, identified vulnerabilities, and developed security protocols. Worked with SIEM tools and incident response procedures.</p>
-                </div>
-            </div>
-            
-            <div class="experience-item fade-in">
-                <div class="experience-content">
-                    <div class="experience-dot"></div>
-                    <h3 class="experience-title">Research Assistant</h3>
-                    <div class="experience-company">University AI Lab</div>
-                    <div class="experience-date">January 2024 - Present</div>
-                    <p>Researching machine learning applications in cybersecurity. Published paper on anomaly detection in network traffic using deep learning techniques.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="section">
-        <h2 class="section-title fade-in">Education</h2>
-        <div class="education-card fade-in">
-            <h3 class="education-title">Bachelor of Science in Computer Science</h3>
-            <div class="education-school">Virginia Tech</div>
-            <div class="experience-date">Expected Graduation: December 2026</div>
-            <p>Minor: Cybersecurity</p>
-            
-            <h4 style="color: #00ffff; margin-top: 1.5rem; margin-bottom: 1rem;">Relevant Coursework</h4>
-            <div class="courses-grid">
-                <div class="course-item">Data Structures and Algorithms</div>
-                <div class="course-item">Computer Organisation I & II</div>
-                <div class="course-item">Intro to Problem Solving In CS</div>
-                <div class="course-item">Sofware Design and Data Structures</div>
-                <div class="course-item">Applied Combinatorics and Graph Theory</div>
-                <div class="course-item">Discrete Mathematics</div>
-                <div class="course-item">Multivariable Calculus</div>
-                <div class="course-item">Linear Algebra</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Modals -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeProjectModal()">&times;</span>
-            <h3 id="modalTitle">Project Title</h3>
-            <div class="slideshow-container">
-                <div class="slide active">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23162447'/><text x='200' y='150' text-anchor='middle' fill='%2300ffff' font-size='20'>Project Screenshot 1</text></svg>" alt="Project Image 1">
-                    <p>Project feature overview and main interface</p>
-                </div>
-                <div class="slide">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23162447'/><text x='200' y='150' text-anchor='middle' fill='%2300ffff' font-size='20'>Project Screenshot 2</text></svg>" alt="Project Image 2">
-                    <p>Dashboard and analytics view</p>
-                </div>
-                <div class="slide">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23162447'/><text x='200' y='150' text-anchor='middle' fill='%2300ffff' font-size='20'>Project Screenshot 3</text></svg>" alt="Project Image 3">
-                    <p>Mobile responsive design and user interface</p>
-                </div>
-                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>
-            </div>
-            <div id="modalDescription">
-                <p>Detailed project description will appear here...</p>
-            </div>
-        </div>
-    </div>
-
- <footer style="background: rgba(10, 10, 30, 0.95); border-top: 1px solid rgba(0, 255, 255, 0.2); padding: 2rem 0; text-align: center; color: #00ffff; font-size: 0.9rem; margin-top: 4rem;">
-    <div style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-        <div style="margin-top: 1rem;">
-            <a href="mailto:youremail@example.com" style="color: #00ffff; margin: 0 10px; text-decoration: none;">Email</a> |
-            <a href="https://github.com/yourgithub" target="_blank" style="color: #00ffff; margin: 0 10px; text-decoration: none;">GitHub</a> |
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" style="color: #00ffff; margin: 0 10px; text-decoration: none;">LinkedIn</a>
-        </div>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
-
