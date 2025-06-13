@@ -255,13 +255,14 @@ const Portfolio = () => {
             <h3>Tools</h3>
             <ul className="skill-list">
               <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" className="icon" alt="AWS" /> AWS</li>
-              <li><i className="devicon-apachekafka-original"></i> Apache Kafka</li>
+              <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg"  className="icon" alt="Apache Kafka" /> Apache Kafka</li>
               <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" className="icon" alt="Docker" /> Docker</li>
-              <li><i className="devicon-github-original"></i> GitHub</li>
+              <li><img src="github-white-icon.png" className="icon" alt="GitHub" /> GitHub</li>
               <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" className="icon" alt="Postman" /> Postman</li>
-              <li><i className="devicon-splunk-original-wordmark"></i> Splunk</li>
+              <li>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" className="icon" alt="Postman" /> Splunk</li>
             </ul>
-          </div>
+          </div>cc
           
           <div className="skill-category fade-in">
             <h3>Operating Systems</h3>
@@ -282,11 +283,11 @@ const Portfolio = () => {
               <h3 className="project-title">CarbonQapture</h3>
               <p className="project-description">A hybrid quantum-AI framework to simulate and propose novel metal-organic frameworks (MOFs) for carbon dioxide capture, accelerating discovery for climate change mitigation. Our project used a Variational Quantum Eigensolver (VQE) to estimate the ground-state energy of MOFs interacting with CO₂, a key metric for carbon capture efficiency. A machine learning model was trained on simulation results to generate and predict high-performing MOF structures, which were then revalidated through quantum simulations.</p>
               <div className="project-links">
-                <a href="https://github.com/Sankalp-dasari/bitcamp25" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <i className="devicon-github-original"></i></a>
+                <a href="https://github.com/Sankalp-dasari/bitcamp25" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <img src="github-white-icon.png" className="icon" alt="GitHub" /></a>
                 <a href="https://bitcamp25.vercel.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
               </div>
               <br />
-              <h5>Tags</h5>
+            
               <div className="project-tags">
                 <span className="tag">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" className="icon" />Python
@@ -313,7 +314,7 @@ const Portfolio = () => {
               <h3 className="project-title">DNAVault</h3>
               <p className="project-description">Developed DNAVault, a secure encryption system designed to protect DNA sequence data against classical and quantum attacks. The system integrates a custom AES-128 encryption mechanism with Kyber key encapsulation, providing end-to-end post-quantum security.</p>
               <div className="project-links">
-                <a href="https://github.com/Sankalp-dasari/DNAVault" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <i className="devicon-github-original"></i></a>
+                <a href="https://github.com/Sankalp-dasari/DNAVault" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <img src="github-white-icon.png" className="icon" alt="GitHub" /></a>
                 <a href="https://dna-vault.vercel.app/" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
               </div>
               <br />
@@ -333,7 +334,7 @@ const Portfolio = () => {
               <h3 className="project-title">FinPoint</h3>
               <p className="project-description">We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction</p>
               <div className="project-links">
-                <a href="https://github.com/Ishaannjain/HackViolet" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <i className="devicon-github-original"></i></a>
+                <a href="https://github.com/Ishaannjain/HackViolet" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"><img src="github-white-icon.png" className="icon" alt="GitHub" /></a>
                 <a href="https://dna-vault.vercel.app/" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
               </div>
               <br />
