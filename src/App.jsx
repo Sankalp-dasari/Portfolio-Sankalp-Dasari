@@ -262,7 +262,7 @@ const Portfolio = () => {
               <li>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg" className="icon" alt="Postman" /> Splunk</li>
             </ul>
-          </div>cc
+          </div>
           
           <div className="skill-category fade-in">
             <h3>Operating Systems</h3>
