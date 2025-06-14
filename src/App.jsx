@@ -152,7 +152,7 @@ const Portfolio = () => {
     project3: {
       title: 'FinPoint',
       description: 'We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction',
-      slides: ["gallery.jpg", "cQ.jpg", "CQ2.jpg"]
+      slides: ["fin2.png", "original.png", "fin3.png"]
     }
   };
 
