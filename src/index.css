@@ -460,7 +460,6 @@ transform: scale(1.05);
 
 /* Modal for project slideshow */
 .modal {
-  display: none;
   position: fixed;
   z-index: 2000;
   left: 0;
