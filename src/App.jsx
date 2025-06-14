@@ -141,15 +141,18 @@ const Portfolio = () => {
   const projectData = {
     project1: {
       title: 'CarbonQapture',
-      description: 'A hybrid quantum-AI framework to simulate and propose novel metal-organic frameworks (MOFs) for carbon dioxide capture, accelerating discovery for climate change mitigation. Our project used a Variational Quantum Eigensolver (VQE) to estimate the ground-state energy of MOFs interacting with CO₂, a key metric for carbon capture efficiency. A machine learning model was trained on simulation results to generate and predict high-performing MOF structures, which were then revalidated through quantum simulations.'
+      description: 'A hybrid quantum-AI framework to simulate and propose novel metal-organic frameworks (MOFs) for carbon dioxide capture, accelerating discovery for climate change mitigation. Our project used a Variational Quantum Eigensolver (VQE) to estimate the ground-state energy of MOFs interacting with CO₂, a key metric for carbon capture efficiency. A machine learning model was trained on simulation results to generate and predict high-performing MOF structures, which were then revalidated through quantum simulations.',
+      slides: ["gallery.jpg", "cQ.jpg", "CQ2.jpg"]
     },
     project2: {
       title: 'DNAVault',
-      description: 'Developed DNAVault, a secure encryption system designed to protect DNA sequence data against classical and quantum attacks. The system integrates a custom AES-128 encryption mechanism with Kyber key encapsulation, providing end-to-end post-quantum security.'
+      description: 'Developed DNAVault, a secure encryption system designed to protect DNA sequence data against classical and quantum attacks. The system integrates a custom AES-128 encryption mechanism with Kyber key encapsulation, providing end-to-end post-quantum security.',
+      slides: ["dnavault.png", "dna2.png", "dna3.png"]
     },
     project3: {
       title: 'FinPoint',
-      description: 'We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction'
+      description: 'We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction',
+      slides: ["gallery.jpg", "cQ.jpg", "CQ2.jpg"]
     }
   };
 
@@ -217,7 +220,15 @@ const Portfolio = () => {
           <p>{heroSubtitle}</p>
           <div className="cta-buttons">
             <a href="#projects" className="btn btn-primary" onClick={(e) => handleNavClick(e, '#projects')}>View Projects</a>
-            <a href="#contact" className="btn btn-secondary" onClick={(e) => handleNavClick(e, '#contact')}>Get In Touch</a>
+            <a
+  href="https://www.linkedin.com/in/sankalp-dasari/"
+  className="btn btn-secondary"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Get In Touch
+</a>
+
           </div>
         </div>
       </section>
@@ -282,6 +293,7 @@ const Portfolio = () => {
             <div className="project-content">
               <h3 className="project-title">CarbonQapture</h3>
               <p className="project-description">A hybrid quantum-AI framework to simulate and propose novel metal-organic frameworks (MOFs) for carbon dioxide capture, accelerating discovery for climate change mitigation. Our project used a Variational Quantum Eigensolver (VQE) to estimate the ground-state energy of MOFs interacting with CO₂, a key metric for carbon capture efficiency. A machine learning model was trained on simulation results to generate and predict high-performing MOF structures, which were then revalidated through quantum simulations.</p>
+              
               <div className="project-links">
                 <a href="https://github.com/Sankalp-dasari/bitcamp25" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <img src="github-white-icon.png" className="icon" alt="GitHub" /></a>
                 <a href="https://bitcamp25.vercel.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
@@ -449,40 +461,33 @@ novel high-performing structures.
 
       {/* Project Modal */}
       {isModalOpen && (
-        <div className="modal" onClick={(e) => e.target.className === 'modal' && closeProjectModal()}>
-          <div className="modal-content">
-            <span className="close" onClick={closeProjectModal}>&times;</span>
-            <h3>{currentProject?.title}</h3>
-            <div className="slideshow-container">
-              <div className={`slide ${currentSlide === 0 ? 'active' : ''}`}>
-                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23162447'/><text x='200' y='150' text-anchor='middle' fill='%2300ffff' font-size='20'>Project Screenshot 1</text></svg>" alt="Project Image 1" />
-                <p>Project feature overview and main interface</p>
-              </div>
-              <div className={`slide ${currentSlide === 1 ? 'active' : ''}`}>
-                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23162447'/><text x='200' y='150' text-anchor='middle' fill='%2300ffff' font-size='20'>Project Screenshot 2</text></svg>" alt="Project Image 2" />
-                <p>Dashboard and analytics view</p>
-              </div>
-              <div className={`slide ${currentSlide === 2 ? 'active' : ''}`}>
-                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23162447'/><text x='200' y='150' text-anchor='middle' fill='%2300ffff' font-size='20'>Project Screenshot 3</text></svg>" alt="Project Image 3" />
-                <p>Mobile responsive design and user interface</p>
-              </div>
-              <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
-              <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
-            </div>
-            <div>
-              <p>{currentProject?.description}</p>
-            </div>
+  <div className="modal" onClick={(e) => e.target.className === 'modal' && closeProjectModal()}>
+    <div className="modal-content">
+      <span className="close" onClick={closeProjectModal}>&times;</span>
+      <h3>{currentProject?.title}</h3>
+      <div className="slideshow-container">
+        {currentProject?.slides.map((src, index) => (
+          <div key={index} className={`slide ${currentSlide === index ? 'active' : ''}`}>
+            <img src={src} alt={`Project Slide ${index + 1}`} />
+            <p>Slide {index + 1}</p>
           </div>
-        </div>
-      )}
+        ))}
+        <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
+        <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
+      </div>
+      <p>{currentProject?.description}</p>
+    </div>
+  </div>
+)}
+
 
       <footer style={{background: 'rgba(10, 10, 30, 0.95)', borderTop: '1px solid rgba(0, 255, 255, 0.2)', padding: '2rem 0', textAlign: 'center', color: '#00ffff', fontSize: '0.9rem', marginTop: '4rem'}}>
         <div style={{maxWidth: '1000px', margin: '0 auto', padding: '0 2rem'}}>
-          <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+          <p>&copy; 2025 Sankalp Dasari.</p>
           <div style={{marginTop: '1rem'}}>
             <a href="mailto:youremail@example.com" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>Email</a> |
-            <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>GitHub</a> |
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>LinkedIn</a>
+            <a href="https://github.com/Sankalp-dasari" target="_blank" rel="noopener noreferrer" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>GitHub</a> |
+            <a href="https://www.linkedin.com/in/sankalp-dasari/" target="_blank" rel="noopener noreferrer" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>LinkedIn</a>
           </div>
         </div>
       </footer>
