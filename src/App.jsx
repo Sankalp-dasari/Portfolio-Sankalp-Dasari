@@ -377,31 +377,45 @@ const Portfolio = () => {
           <div className="experience-item fade-in">
             <div className="experience-content">
               <div className="experience-dot"></div>
-              <h3 className="experience-title">Cybersecurity Intern</h3>
-              <div className="experience-company">SecureNet Technologies</div>
-              <div className="experience-date">June 2024 - August 2024</div>
-              <p>Conducted penetration testing on client networks, identified vulnerabilities, and developed security protocols. Worked with SIEM tools and incident response procedures.</p>
+              <h3 className="experience-title">AIML Lead</h3>
+              <div className="experience-company">IDPro- CarbonQapture</div>
+              <div className="experience-location">Blacksburg, VA</div>
+              <div className="experience-date">June 2025 - Present</div>
+              <p>• Leading AI/ML research to optimize CO₂ capture using MOFs by combining supervised learning with generative design to synthesize 
+novel high-performing structures. 
+<br />
+• Transitioning from neural networks to interpretable models (linear/logistic regression) to identify key MOF features. 
+<br />
+• Applying Bayesian Information Criterion (BIC) to select optimal models and mitigate overfitting during model refinement. </p>
             </div>
           </div>
           
           <div className="experience-item fade-in">
             <div className="experience-content">
               <div className="experience-dot"></div>
-              <h3 className="experience-title">Research Assistant</h3>
-              <div className="experience-company">University AI Lab</div>
-              <div className="experience-date">January 2024 - Present</div>
-              <p>Researching machine learning applications in cybersecurity. Published paper on anomaly detection in network traffic using deep learning techniques.</p>
+              <h3 className="experience-title">Research and Development- Sensing Sub Team</h3>
+              <div className="experience-company">GraVT Design Team</div>
+              <div className="experience-location">Blacksburg, VA</div>
+              <div className="experience-date">September 2024 - Present</div>
+              <p>• Developed real-time rocket tracking system using Image Detection and Machine Learning with OpenCV and TensorFlow. 
+                <br />
+• Eliminated hardware dependency and rocket weight by replacing altimeters with Computer Vision-based tracking. \
+<br />
+• Porting ML models to lower-level languages for improved runtime; researching object detection optimization for high-velocity tracking.</p>
             </div>
           </div>
 
            <div className="experience-item fade-in">
             <div className="experience-content">
               <div className="experience-dot"></div>
-              <h3 className="experience-title"></h3>
-              <div className="experience-company">Software Engineering Intern</div>
+              <h3 className="experience-title">Software Engineering Intern</h3>
+              <div className="experience-company">Prospect Infosystem Pvt Ltd</div>
+              <div className="experience-location">Hyderabad, India</div>
               <div className="experience-date">June 2024 - August 2024</div>
               <p> • Built full-stack web applications using Java (Spring Boot) for RESTful APIs and Angular for frontend, with Postman for API testing. 
-                <br></br>
+
+                
+<br></br>
 • Handled backend errors using Splunk data logging, integrating Apache Kafka to build Producer-Consumer message streams in real time 
 <br />
 • Collaborated in Agile environment, following OOP and version-controlled workflows. </p>
