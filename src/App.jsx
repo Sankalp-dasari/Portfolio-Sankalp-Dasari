@@ -287,7 +287,7 @@ const Portfolio = () => {
                 <a href="https://bitcamp25.vercel.app" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
               </div>
               <br />
-            
+             <h5>Tags</h5>
               <div className="project-tags">
                 <span className="tag">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" className="icon" />Python
@@ -312,7 +312,18 @@ const Portfolio = () => {
             <div className="project-image"><img src="dnavault.png" alt="DNAVault" /></div>
             <div className="project-content">
               <h3 className="project-title">DNAVault</h3>
-              <p className="project-description">Developed DNAVault, a secure encryption system designed to protect DNA sequence data against classical and quantum attacks. The system integrates a custom AES-128 encryption mechanism with Kyber key encapsulation, providing end-to-end post-quantum security.</p>
+              <p className="project-description">Developed DNAVault, a secure encryption system designed to protect DNA sequence data against classical and quantum attacks. The system integrates a custom AES-128 encryption mechanism with Kyber key encapsulation, providing end-to-end post-quantum security.
+                <br />
+                Features:
+                <br />
+-Custom-built AES-128 block cipher for efficient encryption of DNA sequences.
+<br />
+-Kyber key exchange, a lattice-based post-quantum cryptographic method standardized by NIST.
+<br />
+-End-to-end encryption and decryption pipeline supporting DNA sequence datasets (A, G, C, T) with 2-bit binary mapping.
+
+
+              </p>
               <div className="project-links">
                 <a href="https://github.com/Sankalp-dasari/DNAVault" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"> <img src="github-white-icon.png" className="icon" alt="GitHub" /></a>
                 <a href="https://dna-vault.vercel.app/" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
@@ -332,10 +343,9 @@ const Portfolio = () => {
             <div className="project-image"><img src="original.png" alt="FinPoint" /></div>
             <div className="project-content">
               <h3 className="project-title">FinPoint</h3>
-              <p className="project-description">We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction</p>
+              <p className="project-description">We created a real time fraud transaction detection for credit card transactions, as soon as a transaction takes place, our AI trained Model will detect whether the transaction is fraudulent and if it is you will receive a notification that there is a fraudulent transaction reported, it will then go to the blockchain where it will be verified, this would mean large number of transactions at once, duplicate transactions and anomalies will be detected and then registered on the blockchain only if you approved the transaction </p>
               <div className="project-links">
                 <a href="https://github.com/Ishaannjain/HackViolet" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer"><img src="github-white-icon.png" className="icon" alt="GitHub" /></a>
-                <a href="https://dna-vault.vercel.app/" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">🌐</a>
               </div>
               <br />
               <h5>Tags</h5>
@@ -383,6 +393,21 @@ const Portfolio = () => {
               <p>Researching machine learning applications in cybersecurity. Published paper on anomaly detection in network traffic using deep learning techniques.</p>
             </div>
           </div>
+
+           <div className="experience-item fade-in">
+            <div className="experience-content">
+              <div className="experience-dot"></div>
+              <h3 className="experience-title"></h3>
+              <div className="experience-company">Software Engineering Intern</div>
+              <div className="experience-date">June 2024 - August 2024</div>
+              <p> • Built full-stack web applications using Java (Spring Boot) for RESTful APIs and Angular for frontend, with Postman for API testing. 
+                <br></br>
+• Handled backend errors using Splunk data logging, integrating Apache Kafka to build Producer-Consumer message streams in real time 
+<br />
+• Collaborated in Agile environment, following OOP and version-controlled workflows. </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
