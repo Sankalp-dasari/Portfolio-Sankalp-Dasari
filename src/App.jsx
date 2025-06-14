@@ -485,7 +485,7 @@ novel high-performing structures.
         <div style={{maxWidth: '1000px', margin: '0 auto', padding: '0 2rem'}}>
           <p>&copy; 2025 Sankalp Dasari.</p>
           <div style={{marginTop: '1rem'}}>
-            <a href="mailto:youremail@example.com" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>Email</a> |
+            <a href="mailto:sankalpdasari@vt.edu" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>Email</a> |
             <a href="https://github.com/Sankalp-dasari" target="_blank" rel="noopener noreferrer" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>GitHub</a> |
             <a href="https://www.linkedin.com/in/sankalp-dasari/" target="_blank" rel="noopener noreferrer" style={{color: '#00ffff', margin: '0 10px', textDecoration: 'none'}}>LinkedIn</a>
           </div>
