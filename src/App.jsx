@@ -206,7 +206,7 @@ const Portfolio = () => {
             <li><a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>Experience</a></li>
             <li><a href="#education" onClick={(e) => handleNavClick(e, '#education')}>Education</a></li>
             <li>
-              <a href="/Sankalp_Resume_June25 (1).pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/Sankalp_Dasari_Resume_Jun25.pdf" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>
